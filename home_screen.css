@@ -32,7 +32,9 @@
 
 .banner-title{
   font-size: clamp(2.5rem, 8vw, 5.5rem);
-  font-weight: 800;
+  font-weight: 1500;
+  text-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.5);
+  color:antiquewhite;
   margin-bottom: 2.5rem;
   letter-spacing: -0.05em;
   text-transform: capitalize;
@@ -44,7 +46,6 @@
   line-height: 1.6;
   max-width: 700px;
   margin: auto;
-  margin-bottom: 2.5rem;
 }
 
 .banner-logo{
