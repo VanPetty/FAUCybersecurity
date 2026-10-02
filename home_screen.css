@@ -42,7 +42,9 @@
   color:antiquewhite;
   line-height: 1.6;
   max-width: 700px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2.5rem;
 }
 
