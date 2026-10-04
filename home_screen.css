@@ -50,7 +50,9 @@
   margin-bottom: 2.5rem;
 }
 
-.banner-content{
-  max-width: 950px;
-  z-index: 1;
+/* For descreption & other information: Generic Boxes I guess */
+.gen-theme{
+  background: white;
+  flex-direction: column;
+  display: flex;
 }
