@@ -15,7 +15,7 @@
   min-height: 100vh;
   display: flex;
   padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #000000 0%, #000a1a 20%, #01315e 100%);
+  background-image: url(images/FAU_Breeze.jpg);
 }
 
 .banner-tag{
