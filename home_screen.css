@@ -6,7 +6,7 @@
   position: relative;
   flex-direction: column;
   display: flex;
-  min-height: 500;
+  min-height: 1500px;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 26, 0.6) 40%, 
   rgba(1, 49, 94, 0.5) 100%), url("FAU_Breeze.jpg");
   background-size: cover;
