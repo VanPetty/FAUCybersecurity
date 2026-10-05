@@ -6,7 +6,7 @@
   position: relative;
   flex-direction: column;
   display: flex;
-  min-height: 200;
+  min-height: 500;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 26, 0.6) 40%, 
   rgba(1, 49, 94, 0.5) 100%), url("FAU_Breeze.jpg");
   background-size: cover;
@@ -59,15 +59,17 @@
   min-height: 100vh;
 }
 
-.gen-title{
+.gen-title-background{
   font-size: clamp(0.5rem, 4vw, 2.0rem);
   font-weight: 300px;
   text-transform: capitalize;
-  background: red;
+  background-color: red;
+  width: snap-conent;
+  text-color: white;
 }
-
 .gen-pic{
-
+  height: 200px;
+  width: 200px;
 }
 
 .gen-par{
