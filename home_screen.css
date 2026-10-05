@@ -6,6 +6,7 @@
   position: relative;
   flex-direction: column;
   display: flex;
+  min-height: 200;
   background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 26, 0.6) 40%, 
   rgba(1, 49, 94, 0.5) 100%), url("FAU_Breeze.jpg");
   background-size: cover;
@@ -44,8 +45,7 @@
 }
 
 .banner-logo{
-  width: 100%;
-  max-width: 400px;
+  width: auto;
   height: auto;
   margin-bottom: 2.5rem;
 }
