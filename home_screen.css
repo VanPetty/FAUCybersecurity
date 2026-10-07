@@ -1,3 +1,12 @@
+*{
+  box-sizing: norder-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Code to make the banner look pretty/ Professinoal */
 .banner-theme{   
   align-items: center;
@@ -49,9 +58,15 @@
   height: auto;
   margin-bottom: 2.5rem;
 }
+/* Dividing Bar (for flare)*/
+.bar {
+  width: 100%;
+  height: 15px;
+  background-color:linear-gradient(135deg, rgba(208, 7, 7, 0.75) 0%, rgba(8, 95, 237, 0.6) 40%, rgb(226, 218, 218));
 
+}
 /* For descreption & other information: Generic Boxes I guess */
-.gen-theme{
+.gen-theme {
   background: white;
   flex-direction: column;
   display: flex;
@@ -59,27 +74,33 @@
   min-height: 100vh;
 }
 
-.gen-title-background{
-  font-size: clamp(0.5rem, 4vw, 2.0rem);
-  font-weight: 300px;
+.gen-title-background {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 300;
+  width: fit-content;
+  align-self: flex-start;
   text-transform: capitalize;
   background-color: red;
-  width: snap-conent;
-  text-color: white;
+  width: fit-content;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0;
 }
-.gen-pic{
+
+.gen-pic {
   height: 200px;
   width: 200px;
 }
 
-.gen-par{
-
-}
-/*Buttons, should take to different pages*/
-.web-button{
-
+.gen-par {
+  font-size: medium;
+  padding: 0.5rem 1rem;
+  margin: 0;
 }
 
-.Demo-Button{
+/* Buttons, should take to different pages */
+.web-button {
+}
 
-} 
+.demo-button {
+}
