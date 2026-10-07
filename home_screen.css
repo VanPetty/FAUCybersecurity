@@ -1,5 +1,5 @@
 *{
-  box-sizing: norder-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,13 +14,10 @@ body {
   text-align: center;
   position: relative;
   flex-direction: column;
+  min-height: 100vh;
   display: flex;
-  min-height: 500px;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 26, 0.6) 40%, 
-  rgba(1, 49, 94, 0.5) 100%), url("FAU_Breeze.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #000000 0%, #000a1a 20%, #01315e 100%);
 }
 
 .banner-tag{
@@ -37,10 +34,10 @@ body {
 
 .banner-title{
   font-size: clamp(2.5rem, 8vw, 5.5rem);
-  font-weight: 500;
+  font-weight: 1500;
   text-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.5);
   color:antiquewhite;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   letter-spacing: -0.05em;
   text-transform: capitalize;
 }
@@ -48,24 +45,24 @@ body {
 .banner-subtitle{
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   color:antiquewhite;
-  line-height: .6;
+  line-height: 1.6;
   max-width: 700px;
   margin: auto;
 }
 
 .banner-logo{
-  width: auto;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   margin-bottom: 2.5rem;
 }
-/* Dividing Bar (for flare)*/
-.bar {
-  width: 100%;
-  height: 15px;
-  background-color:linear-gradient(135deg, rgba(208, 7, 7, 0.75) 0%, rgba(8, 95, 237, 0.6) 40%, rgb(226, 218, 218));
 
+.banner-content{
+  max-width: 950px;
+  z-index: 1;
 }
-/* For descreption & other information: Generic Boxes I guess */
+
+/* Simple Boxes, Bottons and Other Structures */
 .gen-theme {
   background: white;
   flex-direction: column;
@@ -77,8 +74,6 @@ body {
 .gen-title-background {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 300;
-  width: fit-content;
-  align-self: flex-start;
   text-transform: capitalize;
   background-color: red;
   width: fit-content;
@@ -93,14 +88,11 @@ body {
 }
 
 .gen-par {
-  font-size: medium;
-  padding: 0.5rem 1rem;
-  margin: 0;
 }
 
 /* Buttons, should take to different pages */
-.web-button{
+.web-button {
 }
 
-.demo-button{
+.demo-button {
 }
