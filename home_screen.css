@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -7,20 +7,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Code to make the banner look pretty/ Professinoal */
-.banner-theme{   
+/* Banner */
+.banner-theme {
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   text-align: center;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
   display: flex;
-  padding: 4rem 1.5rem;
-  background: linear-gradient(135deg, #000000 0%, #000a1a 20%, #01315e 100%);
+  min-height: 500px;
+  padding: 2rem 1rem;
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 10, 26, 0.6) 40%, rgba(1, 49, 94, 0.5) 100%), url("FAU_Breeze.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.banner-tag{
+.banner-tag {
   display: inline-block;
   padding: 0.35rem 1.25rem;
   background-color: rgba(255, 255, 255, 0.15);
@@ -32,37 +35,38 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.banner-title{
+.banner-title {
   font-size: clamp(2.5rem, 8vw, 5.5rem);
-  font-weight: 1500;
+  font-weight: 500;
   text-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.5);
-  color:antiquewhite;
-  margin-bottom: 2.5rem;
+  color: antiquewhite;
+  margin: 0 0 1rem 0;
   letter-spacing: -0.05em;
   text-transform: capitalize;
 }
 
-.banner-subtitle{
+.banner-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.4rem);
-  color:antiquewhite;
-  line-height: 1.6;
+  color: antiquewhite;
+  line-height: 1.5;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.banner-logo{
+.banner-logo {
+  height: 90px;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+/* Dividing bar */
+.bar {
   width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 2.5rem;
+  height: 15px;
+  background: linear-gradient(90deg, rgb(208, 7, 7) 0%, rgb(8, 95, 237) 60%, rgb(226, 218, 218) 100%);
 }
 
-.banner-content{
-  max-width: 950px;
-  z-index: 1;
-}
-
-/* Simple Boxes, Bottons and Other Structures */
+/* Description and other info sections */
 .gen-theme {
   background: white;
   flex-direction: column;
@@ -74,25 +78,53 @@ body {
 .gen-title-background {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 300;
+  width: fit-content;
+  align-self: flex-start;
   text-transform: capitalize;
   background-color: red;
-  width: fit-content;
   color: white;
   padding: 0.5rem 1rem;
   margin: 0;
 }
+/* For descreption & other information: Generic Boxes I guess */
+.gen-content {
+  --layout-directon: row;
+  --vertical-align: flex-start;
+  --space-between: 2rem;
+  --pic-width: auto;
 
-.gen-pic {
-  height: 200px;
-  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .gen-par {
+  flex: 1 1 300px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: aliceblue;
+  border: 2px solid #92b7db;
+  border-radius: 16px;
+}
+
+.gen-pic {
+  flex: 0 1 380px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Buttons, should take to different pages */
 .web-button {
+
 }
 
 .demo-button {
+  
 }
