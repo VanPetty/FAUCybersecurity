@@ -67,14 +67,13 @@ body {
 }
 
 /* Description and other info sections */
-.gen-theme {
-  --space-left: 18%;        
+.desc-section {
+  --space-left: 18%;         /* room for a side nav bar later */
   --space-right: 6%;
-  --pic-size: 380px;        
-  --column-gap: 3rem;       
-  --vertical-align: center;
+  --pic-size: 380px;         /* width of the square picture */
+  --column-gap: 3rem;        /* space between text and picture */
+  --vertical-align: center;  /* start = top, center = middle, end = bottom */
 
-  background: white;
   display: grid;
   grid-template-columns: 1fr var(--pic-size);
   column-gap: var(--column-gap);
@@ -82,10 +81,10 @@ body {
   align-content: start;
   padding: 4rem var(--space-right) 4rem var(--space-left);
   min-height: 100vh;
+  background: white;
 }
 
-
-.gen-title-background {
+.desc-title {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 300;
   width: fit-content;
@@ -93,44 +92,27 @@ body {
   background-color: red;
   color: white;
   padding: 0.5rem 1rem;
-  margin: 0 0 1.5rem 0;
-}
-/* For descreption & other information: Generic Boxes I guess */
-.gen-content {
-  --layout-directon: row;
-  --vertical-align: flex-start;
-  --space-between: 2rem;
-  --pic-width: auto;
-
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin: 0 0 1rem 0;
 }
 
-.gen-par {
+.desc-par {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: left;
   margin: 0;
-  padding: 1.5rem;
-  background-color: #f2f4f8;
-  border: 2px solid #003366;
+}
+
+.desc-pic {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
 }
 
-.gen-pic {
-  width: 100%;
-  aspect-ratio: 1 / 1;      
-  object-fit: cover;        
-  object-position: right;  
-  border-radius: 16px;
-}
 /* Phones: stack everything and drop the side space */
 @media (max-width: 800px) {
-  .gen-theme {
+  .desc-section {
     --space-left: 1.5rem;
     --space-right: 1.5rem;
     grid-template-columns: 1fr;
