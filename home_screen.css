@@ -68,23 +68,32 @@ body {
 
 /* Description and other info sections */
 .gen-theme {
+  --space-left: 18%;        
+  --space-right: 6%;
+  --pic-size: 380px;        
+  --column-gap: 3rem;       
+  --vertical-align: center;
+
   background: white;
-  flex-direction: column;
-  display: flex;
-  padding: 4rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr var(--pic-size);
+  column-gap: var(--column-gap);
+  align-items: var(--vertical-align);
+  align-content: start;
+  padding: 4rem var(--space-right) 4rem var(--space-left);
   min-height: 100vh;
 }
+
 
 .gen-title-background {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 300;
   width: fit-content;
-  align-self: flex-start;
   text-transform: capitalize;
   background-color: red;
   color: white;
   padding: 0.5rem 1rem;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
 }
 /* For descreption & other information: Generic Boxes I guess */
 .gen-content {
@@ -102,22 +111,31 @@ body {
 }
 
 .gen-par {
-  flex: 1 1 300px;
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: left;
   margin: 0;
   padding: 1.5rem;
-  background-color: aliceblue;
-  border: 2px solid #92b7db;
+  background-color: #f2f4f8;
+  border: 2px solid #003366;
   border-radius: 16px;
 }
 
 .gen-pic {
-  flex: 0 1 380px;
   width: 100%;
-  max-width: 380px;
-  height: auto;
-  border-radius: 8px;
+  aspect-ratio: 1 / 1;      
+  object-fit: cover;        
+  object-position: center;  
+  border-radius: 16px;
+}
+/* Phones: stack everything and drop the side space */
+@media (max-width: 800px) {
+  .gen-theme {
+    --space-left: 1.5rem;
+    --space-right: 1.5rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
 }
 
 /* Buttons, should take to different pages */
