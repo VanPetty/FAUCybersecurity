@@ -70,8 +70,8 @@ body {
 .desc-section {
   --space-left: 18%;         /* room for a side nav bar later */
   --space-right: 6%;
-  --pic-size: 380px;         /* width of the square picture */
-  --column-gap: 3rem;        /* space between text and picture */
+  --pic-size: 200px;         
+  --column-gap: 2.25rem;        /* space between text and picture */
   --vertical-align: center;  /* start = top, center = middle, end = bottom */
 
   display: grid;
@@ -89,10 +89,11 @@ body {
   font-weight: 300;
   width: fit-content;
   text-transform: capitalize;
-  background-color: red;
+  background-color: rgba(255, 60, 71);
   color: white;
   padding: 0.5rem 1rem;
   margin: 0 0 1rem 0;
+  border-radius: 10px;
 }
 
 .desc-par {
@@ -127,4 +128,10 @@ body {
 
 .demo-button {
   
+}
+
+/* Side Bar content/ code */
+.side-bar-section{
+  --space-left 
+  --vertical-align: left; 
 }
