@@ -76,7 +76,7 @@ body {
   --space-left: 18%;         /* room for a side nav bar later */
   --space-right: 6%;
   --pic-size: 200px;         
-  --column-gap: 2.25rem;        /* space between text and picture */
+  --column-gap: 1.5rem;        /* space between text and picture */
   --vertical-align: center;  /* start = top, center = middle, end = bottom */
 
   display: grid;
@@ -90,15 +90,16 @@ body {
 }
 
 .desc-title {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 300;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #003366;
+  text-transform: none;
+  letter-spacing: 0.02em;
   width: fit-content;
-  text-transform: capitalize;
-  background-color: rgba(255, 60, 71);
-  color: white;
-  padding: 0.5rem 1rem;
+  background: none;
+  padding: 0 0 0 1rem;
   margin: 0 0 1rem 0;
-  border-radius: 10px;
+  border-left: 6px solid #cc0000;
 }
 
 .desc-par {
@@ -108,8 +109,14 @@ body {
   margin: 0;
 }
 
+.desc-par2{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .desc-pic {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
@@ -122,7 +129,7 @@ body {
     --space-left: 1.5rem;
     --space-right: 1.5rem;
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 }
 
@@ -136,7 +143,9 @@ body {
 }
 
 /* Side Bar content/ code */
-/* Side Bar content/ code */
 .side-bar-section{
   --vertical-align: left; 
 }
+
+/* Demo Content */
+
