@@ -125,7 +125,7 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1;      
   object-fit: cover;        
-  object-position: center;  
+  object-position: right;  
   border-radius: 16px;
 }
 /* Phones: stack everything and drop the side space */
