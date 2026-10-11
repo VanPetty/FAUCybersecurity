@@ -61,12 +61,12 @@ body {
 /* Page-body bar */
 .page-body {
   display: grid;
-  grid-template-columns: var(--nav-width) 1fr;
+  grid-template-columns: var(--nav-width) minmax(0, 1fr);
   align-items: start;
 }
 
 .page-content {
-  min-width: 0;   /* stops wide content from pushing the layout past the screen */
+  min-width: 0;
 }
 
 /* Dividing bar */
@@ -83,14 +83,16 @@ body {
 
 /* Description Section */
 .desc-section {
-  --space-left: 18%;         /* room for a side nav bar later */
+  --space-left: 3rem;
   --space-right: 6%;
-  --pic-size: 400px;         
-  --column-gap: 1.5rem;        /* space between text and picture */
-  --vertical-align: center;  /* start = top, center = middle, end = bottom */
+  --pic-size: 380px;         /* picture width */
+  --text-max: 560px;         /* the widest the text column can get */
+  --column-gap: 2rem;
+  --vertical-align: center;
 
   display: grid;
-  grid-template-columns: 1fr var(--pic-size);
+  grid-template-columns: minmax(280px, var(--text-max)) var(--pic-size);
+  justify-content: start;
   column-gap: var(--column-gap);
   align-items: var(--vertical-align);
   align-content: start;
