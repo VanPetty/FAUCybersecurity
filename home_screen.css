@@ -109,7 +109,7 @@ body {
   width: fit-content;
   background: none;
   padding: 0 0 0 1rem;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   border-left: 6px solid #cc0000;
 }
 .desc-par {
@@ -132,13 +132,15 @@ body {
   line-height: 1.6;
   margin: 0;
 }
-/* Buttons, should take to different pages */
-.web-button {
 
+/* Lab cards, should try and reuse them */
+/* layout */
+.lab-grid{
+  align-items: stretch;
 }
-
-.demo-button {
-  
+.lab-card{
+  display: flex;
+  flex-direction: column;
 }
 
 /* Side Bar content/ code */
@@ -186,8 +188,6 @@ body {
   color: white;
   font-weight: 700;
 }
-/* Demo Content */
-
 
 /* Phones: stack everything and drop the side space */
 @media (max-width: 800px) {
