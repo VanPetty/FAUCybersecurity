@@ -126,10 +126,26 @@ body {
 }
 
 /* Training Section */
-.train-par{
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+.info-section {
+  padding: 4rem 6% 4rem 3rem;
+  min-height: 60vh;   /* tall enough to reach the middle of the screen, so the nav link lights up */
+  background: white;
+}
+
+/* Link that looks like a button */
+.web-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #003366;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.web-button:hover {
+  background: #cc0000;
 }
 
 /* Side Bar content/ code */
