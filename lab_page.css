@@ -1,3 +1,72 @@
+/* Simple Banner/header for lab page */
 .header-theme{
     
+}
+
+/* Lab cards, should try and reuse them, use on home screen & lab screen */
+/* layout for demos */
+.lab-grid{
+    --lab-columns: 2; 
+    --lab-max: 1000px; 
+    --lab-box-height: 360px;
+    
+    display: grid; 
+    grid-template-columns: repeat(var(--lab-columns), minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 0;                
+    max-width: var(--lab-max);
+    margin: 1.5rem 0 2rem 0;
+}
+.lab-card {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  margin-bottom: 2rem;
+}
+.lab-tab {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  background: #003366;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+}
+.lab-window {
+  min-height: var(--lab-box-height);
+}
+
+.lab-info {
+  padding: 0.75rem 0.25rem 0 0.25rem;
+}
+
+.lab-info p {
+  margin: 0 0 0.4rem 0;
+  line-height: 1.5;
+}
+.lab-level {
+  font-weight: 700;
+  color: #003366;
+}
+.level {
+  display: inline-block;
+  padding: 0.1rem 0.7rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.9rem;
+}
+.level-beginner     { background: #1f7a3d; }
+.level-intermediate { background: #9a6400; }
+.level-advanced     { background: #cc0000; }
+/* Coming soon cards */
+.lab-card.soon .lab-tab    { background: #888; }
+.lab-card.soon .lab-window { border-style: dashed; border-color: #888; color: #666; }
+
+/* Only stack to one column on narrow screens */
+@media (max-width: 900px) {
+  .lab-grid {
+    --lab-columns: 1;
+  }
 }
