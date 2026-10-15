@@ -1,4 +1,5 @@
 const navLinks = document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 const targets = Array.from(navLinks).map(function (link) {
   return document.querySelector(link.getAttribute("href"));
 });
