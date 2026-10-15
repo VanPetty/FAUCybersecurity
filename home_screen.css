@@ -64,7 +64,6 @@ body {
   grid-template-columns: var(--nav-width) minmax(0, 1fr);
   align-items: start;
 }
-
 .page-content {
   min-width: 0;
 }
@@ -142,6 +141,53 @@ body {
   display: flex;
   flex-direction: column;
 }
+.lab-tab {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  background: #003366;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+}
+.lab-window {
+  flex: 1;
+  padding: 1.25rem;
+  background: white;
+  border: 2px solid #003366;
+  border-radius: 0 12px 12px 12px;   /* top left corner stays square where the tab joins */
+}
+.lab-info {
+  padding: 0.75rem 0.25rem 0 0.25rem;
+}
+
+.lab-info p {
+  margin: 0 0 0.4rem 0;
+  line-height: 1.5;
+}
+
+.lab-level {
+  font-weight: 700;
+  color: #003366;
+}
+
+.level {
+  display: inline-block;
+  padding: 0.1rem 0.7rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.level-beginner     { background: #1f7a3d; }
+.level-intermediate { background: #9a6400; }
+.level-advanced     { background: #cc0000; }
+
+/* Coming soon cards */
+.lab-card.soon .lab-tab    { background: #888; }
+.lab-card.soon .lab-window { border-style: dashed; border-color: #888; color: #666; }
+
 
 /* Side Bar content/ code */
 .side-nav{
