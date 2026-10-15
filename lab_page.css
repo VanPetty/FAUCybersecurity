@@ -1,22 +1,23 @@
 /* Simple Banner/header for lab page */
-.header-theme{
-    
+.header-theme {
+
 }
 
-/* Lab cards, should try and reuse them, use on home screen & lab screen */
-/* layout for demos */
-.lab-grid{
-    --lab-columns: 2; 
-    --lab-max: 1000px; 
-    --lab-box-height: 360px;
-    
-    display: grid; 
-    grid-template-columns: repeat(var(--lab-columns), minmax(0, 1fr));
-    column-gap: 2rem;
-    row-gap: 0;                
-    max-width: var(--lab-max);
-    margin: 1.5rem 0 2rem 0;
+/* Lab cards, reused on the home screen and the lab screen */
+.lab-grid {
+  --lab-columns: 2;          /* 2 = a 2 by 2 grid */
+  --lab-max: 1000px;         /* widest the whole grid can get */
+  --lab-box-height: 360px;   /* minimum height of each demo box */
+
+  display: grid;
+  grid-template-columns: repeat(var(--lab-columns), minmax(0, 1fr));
+  column-gap: 2rem;
+  row-gap: 0;
+  max-width: var(--lab-max);
+  margin: 1.5rem 0 2rem 0;
 }
+
+/* Each card spans 3 rows (tab, box, description) so every row lines up */
 .lab-card {
   display: grid;
   grid-row: span 3;
@@ -24,6 +25,8 @@
   row-gap: 0;
   margin-bottom: 2rem;
 }
+
+/* The folder tab with the demo title */
 .lab-tab {
   justify-self: start;
   margin: 0;
@@ -35,6 +38,7 @@
   border-radius: 10px 10px 0 0;
 }
 
+/* The big box that holds the demo */
 .lab-window {
   min-height: var(--lab-box-height);
   padding: 1.25rem;
@@ -43,6 +47,7 @@
   border-radius: 0 12px 12px 12px;
 }
 
+/* Description under the box */
 .lab-info {
   padding: 0.75rem 0.25rem 0 0.25rem;
 }
@@ -51,10 +56,12 @@
   margin: 0 0 0.4rem 0;
   line-height: 1.5;
 }
+
 .lab-level {
   font-weight: 700;
   color: #003366;
 }
+
 .level {
   display: inline-block;
   padding: 0.1rem 0.7rem;
@@ -62,9 +69,11 @@
   color: white;
   font-size: 0.9rem;
 }
+
 .level-beginner     { background: #1f7a3d; }
 .level-intermediate { background: #9a6400; }
 .level-advanced     { background: #cc0000; }
+
 /* Coming soon cards */
 .lab-card.soon .lab-tab    { background: #888; }
 .lab-card.soon .lab-window { border-style: dashed; border-color: #888; color: #666; }
