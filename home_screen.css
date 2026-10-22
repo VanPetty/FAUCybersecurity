@@ -86,7 +86,7 @@ body {
   --space-right: 6%;
   --pic-size: 380px;         /* picture width */
   --text-max: 560px;         /* the widest the text column can get */
-  --column-gap: 2rem;
+  --column-gap: 3rem;
   --vertical-align: center;
 
   display: grid;
@@ -96,7 +96,7 @@ body {
   align-items: var(--vertical-align);
   align-content: start;
   padding: 4rem var(--space-right) 4rem var(--space-left);
-  min-height: 100vh;
+  min-height: 50vh;
   background: white;
 }
 .desc-title {
@@ -196,9 +196,13 @@ body {
 
 /* Phones: stack everything and drop the side space */
 @media (max-width: 800px) {
-  .page-body {
+  .desc-section {
+    --space-left: 1.5rem;
+    --space-right: 1.5rem;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
   }
+}
   .side-nav {
     position: static;
     height: auto;
