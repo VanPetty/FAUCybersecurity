@@ -148,52 +148,6 @@ body {
   background: #cc0000;
 }
 
-/* Side Bar content/ code */
-.side-nav{
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  flex-direction: column;
-  padding: 2rem 0;
-  background: rgba(4, 57, 93);
-}
-.nav-heading {
-  margin: 0 0 1.5rem 0;
-  padding: 0 1.5rem;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-links a {
-  display: block;
-  padding: 0.8rem 1.5rem;
-  color: #dce6f2;
-  text-decoration: none;
-  border-left: 4px solid transparent;
-  transition: background-color 0.2s, color 0.2s;
-}
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-.nav-links a:focus-visible {
-  outline: 2px solid white;
-  outline-offset: -4px;
-}
-.nav-links a.active {
-  background: rgba(255, 255, 255, 0.12);
-  border-left-color: #cc0000;
-  color: white;
-  font-weight: 700;
-}
-
 /* Phones: stack everything and drop the side space */
 @media (max-width: 800px) {
   .desc-section {
@@ -203,27 +157,3 @@ body {
     row-gap: 2rem;
   }
 }
-  .side-nav {
-    position: static;
-    height: auto;
-    padding: 1rem 0 0 0;
-    border-right: none;
-    border-bottom: 4px solid #cc0000;
-  }
-  .nav-heading {
-    margin-bottom: 0.5rem;
-  }
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .nav-links a {
-    padding: 0.6rem 1rem;
-    border-left: none;
-    border-bottom: 3px solid transparent;
-  }
-  .nav-links a.active {
-    border-bottom-color: #cc0000;
-  }
-}
-
