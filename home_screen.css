@@ -119,13 +119,13 @@ body {
   margin: 0 0 2rem 0;
   border-left: 6px solid #cc0000;
 }
-.desc-par {
+.desc-par0 {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: left;
   margin: 0;
 }
-.desc-pic {
+.desc-pic0 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;

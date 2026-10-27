@@ -88,7 +88,6 @@
   outline-offset: -4px;
 }
 
-/* The link takes the space, the arrow sits on the right */
 .nav-dropdown > summary a {
   flex: 1;
 }
