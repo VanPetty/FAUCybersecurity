@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .banner-tag {
   display: inline-block;
   padding: 0.35rem 1.25rem;
@@ -36,6 +37,7 @@ body {
   margin-bottom: 1.25rem;
   backdrop-filter: blur(4px);
 }
+
 .banner-title {
   font-size: clamp(2.5rem, 8vw, 5.5rem);
   font-weight: 500;
@@ -45,6 +47,7 @@ body {
   letter-spacing: -0.05em;
   text-transform: capitalize;
 }
+
 .banner-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   color: antiquewhite;
@@ -52,10 +55,15 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
+
 .banner-logo {
   height: 90px;
   width: auto;
   margin-bottom: 2rem;
+}
+
+.desc-par + .desc-par {
+  margin-top: 1rem;
 }
 
 /* Page-body bar */
