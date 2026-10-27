@@ -1,13 +1,11 @@
-/* Side Bar content/ code */
-@media (max-width: 800px) {
-.side-nav{
+/* Desktop sidebar */
+.side-nav {
   position: sticky;
   top: 0;
   height: 100vh;
-  flex-direction: column;
+  overflow-y: auto;
   padding: 2rem 0;
-  background: rgba(4, 57, 93);
-  }
+  background: rgb(4, 57, 93);
 }
 .nav-heading {
   margin: 0 0 1.5rem 0;
@@ -46,11 +44,58 @@
   font-weight: 700;
 }
 
+/* Dropdown groups */
+.nav-dropdown > summary {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+.nav-dropdown > summary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.nav-dropdown > summary:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -4px;
+}
+.nav-dropdown > summary a {
+  flex: 1;
+}
+.nav-dropdown > summary::after {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  margin: 0 1.25rem 0.25rem 0.75rem;
+  border-right: 2px solid #dce6f2;
+  border-bottom: 2px solid #dce6f2;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+.nav-dropdown[open] > summary::after {
+  margin: 0.25rem 1.25rem 0 0.75rem;
+  transform: rotate(225deg);
+}
+.nav-sub {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.18);
+}
+.nav-links .nav-sub a {
+  padding: 0.6rem 1.5rem 0.6rem 2.5rem;
+  font-size: 0.95rem;
+}
+
+/* Phones: sidebar becomes a bar at the top */
+@media (max-width: 800px) {
   .side-nav {
     position: static;
     height: auto;
+    overflow-y: visible;
     padding: 1rem 0 0 0;
-    border-right: none;
     border-bottom: 4px solid #cc0000;
   }
   .nav-heading {
@@ -68,69 +113,6 @@
   .nav-links a.active {
     border-bottom-color: #cc0000;
   }
-
-  /* Dropdown groups in the sidebar */
-.nav-dropdown > summary {
-  display: flex;
-  align-items: center;
-  list-style: none;          /* hides the default triangle in Firefox */
-  cursor: pointer;
-}
-
-.nav-dropdown > summary::-webkit-details-marker {
-  display: none;             /* hides the default triangle in Chrome and Safari */
-}
-
-.nav-dropdown > summary:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.nav-dropdown > summary:focus-visible {
-  outline: 2px solid white;
-  outline-offset: -4px;
-}
-
-.nav-dropdown > summary a {
-  flex: 1;
-}
-
-/* The arrow */
-.nav-dropdown > summary::after {
-  content: "";
-  width: 0.55rem;
-  height: 0.55rem;
-  margin: 0 1.25rem 0.25rem 0.75rem;
-  border-right: 2px solid #dce6f2;
-  border-bottom: 2px solid #dce6f2;
-  transform: rotate(45deg);          /* points down */
-  transition: transform 0.2s;
-}
-
-.nav-dropdown[open] > summary::after {
-  margin: 0.25rem 1.25rem 0 0.75rem;
-  transform: rotate(225deg);         /* points up */
-}
-
-/* The items inside a dropdown */
-.nav-sub {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.18);
-}
-
-.nav-links .nav-sub a {
-  padding: 0.6rem 1.5rem 0.6rem 2.5rem;   /* extra left padding indents them */
-  font-size: 0.95rem;
-}
-
-.nav-dropdown > summary span {
-  flex: 1;
-  padding: 0.8rem 1.5rem;
-  color: #dce6f2;
-}
-
-@media (max-width: 800px) {
   .nav-links .nav-sub a {
     padding-left: 1.5rem;
   }
