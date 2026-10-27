@@ -71,6 +71,7 @@ body {
   display: grid;
   grid-template-columns: var(--nav-width) minmax(0, 1fr);
   align-items: start;
+  background: linear-gradient(to right, rgb(4, 57, 93) var(--nav-width), white var(--nav-width));
 }
 .page-content {
   min-width: 0;
