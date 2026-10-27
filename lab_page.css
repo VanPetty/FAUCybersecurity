@@ -1,6 +1,8 @@
 /* Simple Banner/header for lab page */
 .header-theme {
-
+  align-items: flex-start;
+  position: relative;
+  
 }
 
 /* Lab cards, reused on the home screen and the lab screen */

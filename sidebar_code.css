@@ -1,4 +1,5 @@
 /* Side Bar content/ code */
+@media (max-width: 800px) {
 .side-nav{
   position: sticky;
   top: 0;
@@ -6,6 +7,7 @@
   flex-direction: column;
   padding: 2rem 0;
   background: rgba(4, 57, 93);
+  }
 }
 .nav-heading {
   margin: 0 0 1.5rem 0;
@@ -120,6 +122,12 @@
 .nav-links .nav-sub a {
   padding: 0.6rem 1.5rem 0.6rem 2.5rem;   /* extra left padding indents them */
   font-size: 0.95rem;
+}
+
+.nav-dropdown > summary span {
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  color: #dce6f2;
 }
 
 @media (max-width: 800px) {

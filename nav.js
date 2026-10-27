@@ -1,14 +1,11 @@
-const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-const targets = Array.from(navLinks).map(function (link) {
-  return document.querySelector(link.getAttribute("href"));
-});
+const navLinks = document.querySelectorAll('.nav-links a[href*="#"]');
 
 const watcher = new IntersectionObserver(
   function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         navLinks.forEach(function (link) {
-          link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+          link.classList.toggle("active", link.hash === "#" + entry.target.id);
         });
       }
     });
@@ -16,7 +13,8 @@ const watcher = new IntersectionObserver(
   { rootMargin: "-40% 0px -50% 0px" }
 );
 
-targets.forEach(function (section) {
+navLinks.forEach(function (link) {
+  const section = document.querySelector(link.hash);
   if (section) {
     watcher.observe(section);
   }
