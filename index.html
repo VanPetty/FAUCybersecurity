@@ -3,103 +3,157 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Team - FAU CyberSecurity Website</title>
-  <link rel="stylesheet" href="home_screen.css">
-  <link rel="stylesheet" href="sidebar_code.css">
-  <link rel="stylesheet" href="team_page.css">
+  <title>FAU CyberSecurity Website</title>
+ <link rel="stylesheet" href="home_screen.css">
+ <link rel="stylesheet" href="sidebar_code.css">
+ <link rel="stylesheet" href="lab_page.css">
 </head>
 
 <body>
-  <header class="alt-banner-top">
-    <div class="alt-banner-theme">
-      <img class="alt-banner-logo" src="owlhead-logo.png" alt="FAU Owls logo">
-      <h1 class="alt-banner-title">FAU Cyber Security Team</h1>
+  <!-- Header / Banner -->
+  <header class="banner-top">
+    <div class="banner-theme">
+      <img class="banner-logo" src="owlhead-logo.png" alt="FAU Owls logo">
+      <h1 class="banner-title">FAU CyberSecurity Website</h1>
+      <p class="banner-subtitle">Resources and Training</p>
     </div>
   </header>
   <div class="bar"></div>
 
-  <div class="page-body">
-    <!-- Side Bar Content -->
-    <nav class="side-nav" aria-label="Main navigation">
-      <p class="nav-heading">FAU Cyber</p>
-      <ul class="nav-links">
-        <li>
-          <details class="nav-dropdown">
-            <summary><a href="index.html#top">Home</a></summary>
-            <ul class="nav-sub">
+  <!-- Side Bar Content -->
+<div class="page-body">
+  <nav class="side-nav" aria-label="Main navigation">
+    <p class="nav-heading">FAU Cyber</p>
+    <ul class="nav-links">
+  <!-- Home Section -->
+      <li>
+        <details class = "nav-dropdown">
+            <summary><a href="index.html#top">Home</a></summary>            <ul class = "nav-sub">
               <li><a href="index.html#description">About</a></li>
               <li><a href="index.html#seminar">Seminar</a></li>
               <li><a href="index.html#news">Events</a></li>
             </ul>
-          </details>
-        </li>
-        <li><a class="active" href="Team.html">Team</a></li>
-        <li>
-          <details class="nav-dropdown">
-            <summary><a href="index.html#training">Training</a></summary>
-            <ul class="nav-sub">
-              <li><a href="index.html#labs">Labs</a></li>
-              <li><a href="LabSimulation.html">All Labs</a></li>
-              <li><a href="Capstone.html">Capstone Design</a></li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details class="nav-dropdown">
-            <summary><a href="index.html#Resources">Resources</a></summary>
-            <ul class="nav-sub">
-              <li><a href="SourceCode.html">Source Code</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </nav>
+        </details>
+      </li>
+  <!--  Training Section, should include Labs, Simulations and Training Modules -->
+      <li>
+        <details class = "nav-dropdown">
+          <summary><a href="index.html#training">Training</a></summary>          
+          <ul class="nav-sub">
+            <li><a href="index.html#labs">Labs</a></li>
+          </ul>
+        </details>
+      </li>
+    <!--  Resource Section -->
+      <li>
+        <details class = "nav-dropdown">
+          <summary><a href="index.html#Resources">Resources</a></summary>
+          <ul class="nav-sub">
+            <li><a href="index.html#sourcecode">Source Code</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+  <main class="page-content">
+  <section id = "top">
 
-    <main class="page-content">
-      <section class="team-section" id="team">
-        <h2 class="desc-title">Meet the Team</h2>
-        <p class="desc-par0 team-intro">Meet the people who build and run this site. Each entry has a photo, a name and one short bio.</p>
+    <!-- Description Section -->
+    <section class="desc-section" id="description">
+      <div>
+        <h2 class="desc-title">About This Site</h2>
+        <p class="desc-par0">This is the cyber security website for Florida Atlantic University. This service offers a great variety of simulations, labs, learning modules and various other resources to learn from</p>
+         <p class="desc-par0">We've hand crafted and designed these resources to ensure you have the best experience diving into the world of Cyber Security.</p>
+      </div>
+      <img class="desc-pic0" src="Temp-Stock-Photo-Getty-Image.png" alt="Hands typing on a laptop keyboard">
+    </section>
 
-        <!-- To add a person: copy one team-member block and paste it at the end of the list.
-             Swap owlhead-logo.png for a real photo and remove the word "placeholder" from the class. -->
-        <div class="team-list">
+  <section class="desc-section" id="seminar">
+    <div>
+      <h2 class="desc-title">Seminar</h2>
+      <p class="desc-par0">Place Holder text, needs updating</p>
+    </div>
+  </section>
 
-          <article class="team-member">
-            <img class="team-photo placeholder" src="owlhead-logo.png" alt="Photo of team member 1">
-            <div>
-              <h3 class="team-name">Team Member Name</h3>
-              <p class="team-bio">Title, school, degrees, research interests and honors go here. To be announced.</p>
-            </div>
-          </article>
+    <section class = "desc-section"id = "news">
+      <h2 class = "desc-title">Upcoming Events</h2>
+      <p class = "desc-par0"></p>
+    </section>
+</section>
 
-          <article class="team-member">
-            <img class="team-photo placeholder" src="owlhead-logo.png" alt="Photo of team member 2">
-            <div>
-              <h3 class="team-name">Team Member Name</h3>
-              <p class="team-bio">Title, school, degrees, research interests and honors go here. To be announced.</p>
-            </div>
-          </article>
+<div class="bar2"></div>
+<!-- Training Section, should include demos -->
+  <section class = "desc-section" id = "training">
+    <div>
+      <h2 class = "desc-title">Training:</h2>
+      <p class = "desc-par0">A multitude of hands on labs, simulations and learning modules are provided for an in depth learning experience.</p>
+    </div>
+  </section>
 
-          <article class="team-member">
-            <img class="team-photo placeholder" src="owlhead-logo.png" alt="Photo of team member 3">
-            <div>
-              <h3 class="team-name">Team Member Name</h3>
-              <p class="team-bio">Title, school, degrees, research interests and honors go here. To be announced.</p>
-            </div>
-          </article>
+<!-- Lab Section, should include a demo -->
+<section class="info-section" id="labs">
+  <h2 class="desc-title">Labs and Simulations</h2>
+  <p class="desc-par">We also provide a number of labs and simulations. Here are some of our more popular ones:</p>
 
-          <article class="team-member">
-            <img class="team-photo placeholder" src="owlhead-logo.png" alt="Photo of team member 4">
-            <div>
-              <h3 class="team-name">Team Member Name</h3>
-              <p class="team-bio">Title, school, degrees, research interests and honors go here. To be announced.</p>
-            </div>
-          </article>
+  <div class="lab-grid">
+    <!-- Password Verifier -->
+    <article class="lab-card">
+      <h3 class="lab-tab">Password Verifier</h3>
+      <div class="lab-window"></div>
+      <div class="lab-info">
+        <p class="lab-level">Difficulty: <span class="level level-beginner">Beginner</span></p>
+        <p>Weak passwords cause most account break-ins. Length matters more than clever tricks, and this shows you why.</p>
+      </div>
+    </article>
 
-        </div>
-      </section>
-      <div class="bar2"></div>
-    </main>
+    <!-- Cookie Sim -->
+    <article class="lab-card">
+      <h3 class="lab-tab">Website Cookies</h3>
+      <div class="lab-window"></div>
+      <div class="lab-info">
+        <p class="lab-level">Difficulty: <span class="level level-beginner">Beginner</span></p>
+        <p>Third party cookies follow you from site to site. Blocking the right ones protects your privacy without breaking the page.</p>
+      </div>
+    </article>
+
+    <article class="lab-card soon">
+      <h3 class="lab-tab">Coming Soon</h3>
+      <div class="lab-window">
+        <p>This area is still under construction.</p>
+      </div>
+    </article>
+
+    <article class="lab-card soon">
+      <h3 class="lab-tab">Coming Soon</h3>
+      <div class="lab-window">
+        <p>This area is still under construction.</p>
+      </div>
+    </article>
+
   </div>
+
+  <a class="web-button" href="LabSimulation.html">See all labs and simulations</a>
+</section>
+<div class="bar2"></div>
+
+<!-- Resource Section-->
+<section class="desc-section" id="Resources">
+  <div>
+    <h2 class="desc-title">Resource Center</h2>
+    <p class="desc-par0">Here are some of the external resources that have been used. </p>
+  </div>
+  </section>
+<section class = "desc-section" id = "sourcecode">
+  <div>
+    <h2 class = "desc-title">Source Code</h2>
+    <p class = "desc-par0">We've attached links to several areas to obtain source code to learn from.</p>
+  </div>
+</section>
+<div class="bar2"></div>
+
+  </main>
+</div>
+
+<script src="nav.js"></script>
 </body>
 </html>
