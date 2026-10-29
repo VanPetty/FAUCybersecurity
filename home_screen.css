@@ -62,6 +62,29 @@ body {
   margin-bottom: 2rem;
 }
 
+.alt-banner-theme{
+  align-items: normal;
+  text-align:left; 
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  background-color: #003366;
+  padding: 2rem 1rem;
+  max-height:50px;
+}
+.alt-banner-title{
+  font-size: clamp(1rem, 1vw, 1rem);
+  color: antiquewhite;
+  position: left;
+  margin: 0 auto;
+}
+
+.alt-banner-logo {
+  height: 25px;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
 .desc-par + .desc-par {
   margin-top: 1rem;
 }

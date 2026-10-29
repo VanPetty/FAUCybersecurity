@@ -1,0 +1,64 @@
+/* css for team page*/
+.team-section {
+  padding: 4rem 6% 4rem 3rem;
+  min-height: 70vh;
+  background: white;
+}
+
+.team-intro {
+  max-width: 700px;
+  margin: 0 0 2.5rem 0;
+}
+
+/* One vertical list, like the SDSU team page */
+.team-list {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 900px;
+}
+
+.team-member {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  column-gap: 1.75rem;
+  align-items: start;
+}
+
+.team-photo {
+  width: 160px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #003366;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* The owl logo is wide, so it sits inside the box instead of filling it */
+.team-photo.placeholder {
+  object-fit: contain;
+  padding: 1rem;
+  background: #f1f5fa;
+}
+
+.team-name {
+  margin: 0 0 0.5rem 0;
+  color: #003366;
+  font-size: 1.3rem;
+}
+
+.team-bio {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Phones: photo on top, text below */
+@media (max-width: 600px) {
+  .team-section {
+    padding: 2rem 1.5rem;
+  }
+  .team-member {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}

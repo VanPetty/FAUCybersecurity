@@ -1,0 +1,77 @@
+/* capstone page */
+.capstone-section {
+  padding: 4rem 6% 4rem 3rem;
+  min-height: 70vh;
+  background: white;
+}
+
+.capstone-intro {
+  max-width: 700px;
+  margin: 0 0 2.5rem 0;
+}
+
+.capstone-subtitle {
+  margin: 0 0 1rem 0;
+  color: #003366;
+  font-size: 1.3rem;
+}
+
+/* Cards sit in a grid that fills the row and wraps on small screens */
+.capstone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 0 2.5rem 0;
+}
+
+.capstone-card {
+  padding: 1.25rem;
+  background: white;
+  border: 2px solid #003366;
+  border-top: 6px solid #cc0000;
+  border-radius: 12px;
+}
+
+.capstone-card h4 {
+  margin: 0 0 0.6rem 0;
+  color: #003366;
+  font-size: 1.15rem;
+}
+
+.capstone-card p {
+  margin: 0 0 0.4rem 0;
+  line-height: 1.5;
+}
+
+.capstone-step {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+
+.capstone-label {
+  font-weight: 700;
+  color: #003366;
+}
+
+/* Placeholder cards look the same as the Coming Soon labs */
+.capstone-card.soon {
+  border-style: dashed;
+  border-color: #888;
+  border-top: 6px solid #888;
+  color: #666;
+}
+
+.capstone-card.soon h4,
+.capstone-card.soon .capstone-label {
+  color: #666;
+}
+
+@media (max-width: 800px) {
+  .capstone-section {
+    padding: 2rem 1.5rem;
+  }
+}
