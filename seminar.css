@@ -1,0 +1,111 @@
+.seminar-section {
+  padding: 4rem 6% 4rem 3rem;
+  min-height: 60vh;
+  background: white;
+}
+
+.seminar-tag {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 0.3rem 1rem;
+  background: #cc0000;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+.seminar-intro {
+  max-width: 700px;
+  margin: 0 0 2.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.seminar-subtitle {
+  margin: 0 0 1rem 0;
+  color: #003366;
+  font-size: 1.3rem;
+}
+
+/* Six info cards in a grid that wraps on small screens */
+.seminar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 0 2.5rem 0;
+}
+
+.seminar-card {
+  padding: 1.25rem;
+  background: white;
+  border: 2px solid #003366;
+  border-top: 6px solid #cc0000;
+  border-radius: 12px;
+}
+
+.seminar-card h3 {
+  margin: 0 0 0.6rem 0;
+  color: #003366;
+  font-size: 1.15rem;
+}
+
+.seminar-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Schedule table */
+.seminar-table-wrap {
+  max-width: 1000px;
+  margin: 0 0 2.5rem 0;
+  overflow-x: auto;
+}
+
+.seminar-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #003366;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.seminar-table th {
+  padding: 0.8rem 1rem;
+  background: #003366;
+  color: white;
+  text-align: left;
+}
+
+.seminar-table td {
+  padding: 0.8rem 1rem;
+  border-top: 1px solid #dce6f2;
+}
+
+.seminar-table tbody tr:nth-child(even) {
+  background: #f1f5fa;
+}
+
+/* Logo placeholders */
+.seminar-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 0 2.5rem 0;
+}
+
+.seminar-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background: #f1f5fa;
+  border: 2px dashed #888;
+  border-radius: 12px;
+  color: #666;
+}

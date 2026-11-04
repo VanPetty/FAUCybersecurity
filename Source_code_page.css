@@ -1,5 +1,6 @@
 /* Source code page. The banner, sidebar, title and button styles come from home_screen.css and sidebar_code.css. */
 .source-section {
+  margin-left: 50px;
   padding: 4rem 6% 4rem 3rem;
   min-height: 70vh;
   background: white;
