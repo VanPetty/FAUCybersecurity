@@ -182,6 +182,10 @@ body {
 
 /* Phones: stack everything and drop the side space */
 @media (max-width: 800px) {
+  .page-body {
+    grid-template-columns: 1fr;
+    background: white;
+  }
   .desc-section {
     --space-left: 1.5rem;
     --space-right: 1.5rem;
