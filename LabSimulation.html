@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -11,14 +10,104 @@
 </head>
 
 <body>
-  <main class="page-content">
-    <section class="info-section" id="labs">
-      <h1 class="desc-title">Labs and Simulations</h1>
-      <p class="desc-par0">Every lab and simulation we offer will be listed here.</p>
-      <div class="lab-grid"></div>
-      <a class="web-button" href="Training.html">Back to Training</a>
-    </section>
-  </main>
-</body>
+  <header class="alt-banner-top">
+    <div class="alt-banner-theme">
+      <img class="alt-banner-logo" src="owlhead-logo.png" alt="FAU Owls logo">
+      <h1 class="alt-banner-title">Labs and Simulations</h1>
+    </div>
+  </header>
+  <div class="bar"></div>
 
+  <div class="page-body">
+    <!-- Side Bar Content -->
+    <nav class="side-nav" aria-label="Main navigation">
+      <p class="nav-heading">FAU Cyber</p>
+      <ul class="nav-links">
+        <li>
+          <details class="nav-dropdown">
+            <summary><a href="index.html#top">Home</a></summary>
+            <ul class="nav-sub">
+              <li><a href="index.html#description">About</a></li>
+              <li><a href="index.html#seminar">Seminar</a></li>
+              <li><a href="ProjectStructure.html">Project Structure</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="Team.html">Team</a></li>
+        <li>
+          <details class="nav-dropdown">
+            <summary><a href="Program.html">Program</a></summary>
+            <ul class="nav-sub">
+              <li><a href="Program.html#program-2027">2027</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details class="nav-dropdown" open>
+            <summary><a href="Training.html">Training</a></summary>
+            <ul class="nav-sub">
+              <li><a class="active" href="LabSimulation.html">Labs</a></li>
+              <li><a href="Capstone.html">Capstone Design</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details class="nav-dropdown">
+            <summary><a href="Resources.html">Resources</a></summary>
+            <ul class="nav-sub">
+              <li><a href="SourceCode.html">Source Code</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="page-content">
+      <section class="info-section" id="all-labs">
+        <h2 class="desc-title">Labs and Simulations</h2>
+        <p class="desc-par0">Every lab and simulation we offer is listed here.</p>
+
+        <!-- To add a lab: copy one lab-card, delete the word "soon" from the class and fill in the text. -->
+        <div class="lab-grid">
+          <!-- Password Verifier -->
+          <article class="lab-card">
+            <h3 class="lab-tab">Password Verifier</h3>
+            <div class="lab-window"></div>
+            <div class="lab-info">
+              <p class="lab-level">Difficulty: <span class="level level-beginner">Beginner</span></p>
+              <p>Weak passwords cause most account break-ins. Length matters more than clever tricks, and this shows you why.</p>
+            </div>
+          </article>
+
+          <!-- Cookie Sim -->
+          <article class="lab-card">
+            <h3 class="lab-tab">Website Cookies</h3>
+            <div class="lab-window"></div>
+            <div class="lab-info">
+              <p class="lab-level">Difficulty: <span class="level level-beginner">Beginner</span></p>
+              <p>Third party cookies follow you from site to site. Blocking the right ones protects your privacy without breaking the page.</p>
+            </div>
+          </article>
+
+          <article class="lab-card soon">
+            <h3 class="lab-tab">Coming Soon</h3>
+            <div class="lab-window">
+              <p>This area is still under construction.</p>
+            </div>
+          </article>
+
+          <article class="lab-card soon">
+            <h3 class="lab-tab">Coming Soon</h3>
+            <div class="lab-window">
+              <p>This area is still under construction.</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="web-button" href="Training.html">Back to Training</a>
+      </section>
+      <div class="bar2"></div>
+    </main>
+  </div>
+</body>
 </html>
